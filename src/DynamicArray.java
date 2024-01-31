@@ -30,10 +30,7 @@ public class DynamicArray {
                 }
                 setSize(getSize()-1);
 
-
             }
-
-
         }
 
     }
@@ -41,9 +38,35 @@ public class DynamicArray {
     public int getSize() {
         return size;
     }
+    public int getLength() {
+        return array.length;
+    }
+
+    public Person getPerson(int index) {
+       return array[index];
+    }
 
     public void setSize(int size) {
         this.size = size;
+    }
+
+    public Person setPerson(int index, Person person) {
+        return array[index] = person;
+    }
+
+    public Person[] grow() {
+        int newSize = array.length * 2;
+        Person[] newArray = new Person[newSize];
+
+
+        for(int i = 0; i < array.length; i++) {
+
+            newArray[i] = array[i];
+
+        }
+        array = newArray;
+            return array;
+
     }
 
     @Override

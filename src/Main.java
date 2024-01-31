@@ -6,6 +6,7 @@ public class Main {
         Person ron = new Person("Ron Weasley");
         Person hermione = new Person("Hermione Granger");
         Person yaw  = new Person("Yaw");
+        Person chris  = new Person("Chris");
 
         DynamicArray darr = new DynamicArray();
 
@@ -14,12 +15,7 @@ public class Main {
         darr.add(ron);
         darr.add(hermione);
         darr.add(yaw);
-        System.out.println(darr);
-        darr.remove(1);
-        System.out.println(darr);
-        darr.remove();
-        System.out.println(darr);
-
+        darr.add(yaw);
 
 
 
