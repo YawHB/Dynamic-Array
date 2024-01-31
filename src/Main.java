@@ -16,6 +16,9 @@ public class Main {
         darr.add(hermione);
         darr.add(yaw);
         darr.add(yaw);
+        System.out.println(darr);
+       darr.clear();
+        System.out.println(darr.getSize());
 
 
 

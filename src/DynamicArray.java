@@ -16,23 +16,26 @@ public class DynamicArray {
         array[getSize()-1] = null;
         setSize(getSize()-1);
     }
+
+
     public  void remove(int index) {
         Person personToRemove = array[index];
-        System.out.println(personToRemove);
 
         for(int i = 0; i < array.length; i++) {
-
             if(array[i] == personToRemove) {
 
                 for(int j = i; j < array.length - 1; j++) {
                     array[j] = array[j + 1];
-
                 }
                 setSize(getSize()-1);
-
             }
         }
+    }
 
+    public Person[] clear() {
+        array = new Person[0];
+        setSize(0);
+        return array;
     }
 
     public int getSize() {
@@ -68,6 +71,8 @@ public class DynamicArray {
             return array;
 
     }
+
+
 
     @Override
     public String toString() {
