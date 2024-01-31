@@ -7,6 +7,8 @@ public class Main {
         Person hermione = new Person("Hermione Granger");
         Person yaw  = new Person("Yaw");
         Person chris  = new Person("Chris");
+        Person bo  = new Person("Bo");
+
 
         DynamicArray darr = new DynamicArray();
 
@@ -15,10 +17,29 @@ public class Main {
         darr.add(ron);
         darr.add(hermione);
         darr.add(yaw);
+        darr.add(bo);darr.add(harry);
+        darr.add(ron);
+        darr.add(hermione);
         darr.add(yaw);
+        darr.add(bo);
         System.out.println(darr);
-       darr.clear();
-        System.out.println(darr.getSize());
+       darr.grow();
+        darr.add(chris);
+       darr.grow();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+       darr.remove();
+        System.out.println(darr);
+
 
 
 

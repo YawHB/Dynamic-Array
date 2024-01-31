@@ -12,9 +12,14 @@ public class DynamicArray {
 
     }
 
-    public void remove(){
+    public int remove(){
+        if(getSize() > 0) {
         array[getSize()-1] = null;
-        setSize(getSize()-1);
+        System.out.println("One element removed");
+        return setSize(getSize()-1);
+        }
+        System.out.println("The array is empty");
+        return -1;
     }
 
 
@@ -49,8 +54,9 @@ public class DynamicArray {
        return array[index];
     }
 
-    public void setSize(int size) {
+    public int setSize(int size) {
         this.size = size;
+        return size;
     }
 
     public Person setPerson(int index, Person person) {
@@ -68,6 +74,7 @@ public class DynamicArray {
 
         }
         array = newArray;
+        System.out.println((array.length));
             return array;
 
     }
