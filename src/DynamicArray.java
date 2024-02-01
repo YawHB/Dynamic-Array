@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class DynamicArray {
 
     private int size = 0;
+    private int growSize;
     private Person[] array = new Person[10];
 
 

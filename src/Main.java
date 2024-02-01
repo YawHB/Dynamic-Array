@@ -23,21 +23,8 @@ public class Main {
         darr.add(yaw);
         darr.add(bo);
         System.out.println(darr);
-       darr.grow();
+        darr.grow();
         darr.add(chris);
-       darr.grow();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
-       darr.remove();
         System.out.println(darr);
 
 
