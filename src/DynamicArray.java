@@ -3,11 +3,16 @@ import java.util.Arrays;
 public class DynamicArray {
 
     private int size = 0;
-    private int growSize;
+    private int growSize = 5;
     private Person[] array = new Person[10];
 
 
     public void add(Person person) {
+        if(array.length == getSize()) {
+            grow();
+        }
+        System.out.println("getSize " + getSize());
+        System.out.println("array length " +  array.length);
         array[getSize()] = person;
        setSize(getSize()+1);
 
@@ -64,8 +69,8 @@ public class DynamicArray {
         return array[index] = person;
     }
 
-    public Person[] grow() {
-        int newSize = array.length * 2;
+    private Person[] grow() {
+        int newSize = array.length + growSize;
         Person[] newArray = new Person[newSize];
 
 
