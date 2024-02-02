@@ -2,7 +2,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Person harry = new Person("Harry Potter");
+        Person harry = new Person("Harry ");
         Person ron = new Person("Ron Weasley");
         Person hermione = new Person("Hermione Granger");
         Person yaw = new Person("Yaw");
@@ -12,21 +12,37 @@ public class Main {
 
         DynamicArray darr = new DynamicArray();
 
+        /*System.out.println();
+        System.out.println(darr);
+        System.out.println("----------");
+        darr.add(harry);
+        System.out.println(darr);
+        System.out.println("----------");*/
 
         darr.add(harry);
-        darr.add(ron);
-        darr.add(hermione);
-        darr.add(yaw);
-        darr.add(bo);
         darr.add(harry);
+        darr.add(harry);
+        darr.add(harry);
+        darr.add(harry);
+        darr.add(harry);
+        darr.add(harry);
+        darr.add(harry);
+        darr.add(bo);
+        darr.add(chris);
         darr.add(ron);
-        darr.add(hermione);
-        darr.add(bo);
-        darr.add(bo);
-        darr.add(bo);
-        darr.add(bo);
-        darr.add(bo);
+
+
         System.out.println(darr);
+        System.out.println("===FJERN===");
+        darr.remove();
+        System.out.println(darr);
+
+
+
+
+
+
+// kan min kode fjerne det sidste element i
 
 
 
